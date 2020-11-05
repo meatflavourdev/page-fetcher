@@ -6,7 +6,7 @@ const readline = require("readline");
 // Get args from command line
 const [url, path] = process.argv.slice(2);
 
-
+// @TODO Known bugs-- hangs on weird paths eg. './//3453/index.html'
 
 const fetch = function (url, path) {
   request(url, (error, response, body) => {
